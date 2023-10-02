@@ -1,0 +1,52 @@
+/*{
+    margin: 0vw;
+    padding: 0vw;
+}*/
+.music{
+    text-align: center;
+    animation: bouge 5s ease-in-out infinite;
+}
+@keyframes bouge{
+    0%{
+        transform: scaleX(1);
+        /* transform: scaleY(1); */
+        color:darkgreen;
+    }
+    25%{
+        transform: scale(3);
+        transform: scaleY(3);
+        color:aqua;
+    }
+    50%{
+        transform: scaleX(6);
+        color:fuchsia
+    }
+}
+
+.grille{
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 25% 70%;
+    grid-template-rows: 100%;
+    grid-template-areas: "li vi";
+}
+
+.lien{
+    margin: 10px;
+    padding: 5px;
+    grid-area: li;
+}
+.video{
+    padding: 1px;
+    grid-area: vi;
+}
+.champ{
+   border-radius: 2vw;
+   background-color: aquamarine; 
+   width: 20vw;
+   text-align: center;
+}
+.radian{
+    border-radius: 3vw;
+    border: 3vw;
+}
